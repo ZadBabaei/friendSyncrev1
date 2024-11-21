@@ -1,0 +1,60 @@
+/* ...............................................................left side................................................................................... */
+.signup-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.image-wrapper img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+/* The green rounded rectangle */
+/* .background-shape {
+  position: absolute;
+  left: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 80vh;
+  background-color: #82AB8D;
+  border-radius: 160px 160px 0 0;
+  z-index: 0;
+} */
+
+
+/* .overlay-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
+.page-footer {
+  padding: 0.75rem;
+  text-align: start;
+  color: #000000;
+  font-size: 0.5rem;
+  background-color: rgba(26, 112, 18, 0.322);
+  backdrop-filter: blur(70px);
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .background-shape {
+    left: 2vw;
+    width: 250px;
+  }
+  
+  .image-container {
+    left: calc(2vw + 125px);
+    width: 250px;
+  }
+}
+
+@media (max-height: 800px) {
+  .background-shape {
+    height: 70vh;
+  }
+}

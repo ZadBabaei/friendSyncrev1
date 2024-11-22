@@ -9,6 +9,7 @@ import googleIcon from '../components/asset/Imgs/google.png';
 import facebookIcon from '../components/asset/Imgs/facebook.png';
 import githubIcon from '../components/asset/Imgs/github.png';
 import '../styles/Signin.css';
+import Footer from '../components/Footer';
 
 const SigninPage = () => {
   const [formData, setFormData] = useState({
@@ -142,10 +143,8 @@ const SigninPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="page-footer">
-        
-        <p>© 2024 FriendSync. All rights reserved.</p>
-      </footer>
+           {/* Footer */}
+    <Footer />
     </div>
   );
 };

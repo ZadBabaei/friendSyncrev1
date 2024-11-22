@@ -5,6 +5,8 @@ import laptopImg from '../components/asset/Imgs/signUpPageImage.png';
 // Import CSS
 import '../styles/signup.css';
 
+import Footer from '../components/Footer';
+
 function SignupPage() {
   return (
     <div className="signup-container">
@@ -29,9 +31,7 @@ function SignupPage() {
       </main>
 
       {/* Footer */}
-      <footer className="page-footer">
-        <p>© 2024 FriendSync. All rights reserved.</p>
-      </footer>
+    <Footer />
     </div>
   );
 }

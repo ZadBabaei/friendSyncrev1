@@ -128,10 +128,10 @@ const SigninPage = () => {
 
           <div className="signin-image">
             {/* Green rounded rectangle div */}
-            <div className="background-shape"></div>
+            <div className="signin-background-shape"></div>
             
             {/* Image positioned on top */}
-            <div className="image-container">
+            <div className="signin-image-container">
               <img 
                 src={laptopImg} 
                 alt="Young man with headphones using laptop" 

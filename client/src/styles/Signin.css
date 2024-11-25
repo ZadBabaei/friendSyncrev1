@@ -322,8 +322,8 @@
   flex: 1;
   padding: 3rem;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -335,17 +335,107 @@
 /* Image section */
 
 /* ...............................................................Footer................................................................................... */
-/* Footer styles */
-.page-footer {
-  padding: 0.75rem;
-  text-align: start;
-  color: #000000;
-  font-size: 0.5rem;
-  background-color: rgba(26, 112, 18, 0.322);
-  backdrop-filter: blur(70px);
-  border-top: 1px solid rgba(255, 255, 255, 0.158);
-}
+
 /* ...............................................................Responsive................................................................................... */
+
+@media screen and (max-width: 768px) {
+  .signin-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .signin-image {
+    order: -1;
+    /* height: 3vh; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding-top: 0px; */
+  }
+
+  .signin-background-shape {
+    /* transform: rotate(180deg); */
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    /* right: 100px; */
+    height: 300px;
+    width: 100%;
+    border-radius: 0 0 200px 200px;
+    background-color: #82AB8D;
+    backdrop-filter: blur(50px);
+  }
+
+  .signin-image-container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .overlay-image {
+    width: 180px;
+    height: auto;
+  }
+
+  .signin-form-container {
+    padding: 1rem;
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 468px) {
+  .signin-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .signin-image {
+    order: -1;
+    height: 3vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .signin-background-shape {
+    /* transform: rotate(180deg); */
+    position: absolute;
+    top: 0;
+    left: 25%;
+    /* right: 100px; */
+    height: 300px;
+    width: 50%;
+    border-radius: 0 0 200px 200px;
+    background-color: #82AB8D;
+    backdrop-filter: blur(50px);
+  }
+
+  .signin-image-container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .overlay-image {
+    width: 150px;
+    height: auto;
+  }
+
+  .signin-form-container {
+    padding: 1rem;
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 
 

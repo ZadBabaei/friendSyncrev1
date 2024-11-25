@@ -1,0 +1,14 @@
+.page-footer {
+  padding: 0.8rem 2rem;
+  margin-top: auto;
+  background-color: rgba(26, 112, 18, 0.322);
+  backdrop-filter: blur(70px);
+  border-top: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.page-footer p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.8em;
+  color: #000000;
+}

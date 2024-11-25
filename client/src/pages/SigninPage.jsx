@@ -4,12 +4,12 @@ import { ReactComponent as EmailIcon } from '../components/asset/Imgs/mail-02 - 
 import { ReactComponent as LockIcon } from '../components/asset/Imgs/lock-password - 24px.svg';
 import { ReactComponent as EyeSlashIcon } from '../components/asset/Imgs/view-off-slash - 24px.svg';
 import laptopImg from '../components/asset/Imgs/young-man-sitting-in-front-of-laptop.png';
-import Logo from '../components/asset/Imgs/LOgo.png';
 import googleIcon from '../components/asset/Imgs/google.png';
 import facebookIcon from '../components/asset/Imgs/facebook.png';
 import githubIcon from '../components/asset/Imgs/github.png';
 import '../styles/Signin.css';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 const SigninPage = () => {
   const [formData, setFormData] = useState({
@@ -28,14 +28,7 @@ const SigninPage = () => {
 
   return (
     <div className="page-container">
-      {/* Header */}
-      <header className="page-header">
-        <div className="app-branding">
-          <img src={Logo} alt="FriendSync Logo" className="app-logo" style={{ transform: 'scale(1.1)' }} />
-          <h2 className="app-name">FriendSync</h2>
-        </div>
-      </header>
-
+      <Navbar />
       {/* Main/Body */}
       <main className="page-main">
         <div className="signin-content">
